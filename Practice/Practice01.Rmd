@@ -1,0 +1,240 @@
+---
+title: "Tutorial"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Workspace
+
+
+**Just do your best to complete all the exercises**
+
+1. What is your current working directory?
+
+```{r current-working-directory, exercise=TRUE}
+
+```
+
+2. Set your working directory 
+
+```{r setting-working-directory, exercise= TRUE}
+
+```
+
+3. List all the loaded packages
+
+```{r search-path, exercise = TRUE}
+
+```
+
+4. list all the objects available in your workspace
+
+```{r all-objects, exercise=TRUE}
+
+```
+5. Check wheather `readr`, `readxl` and `haven` packages are installed, if not
+  install them
+
+```{r auto-install-packages, exercise = TRUE}
+
+```
+
+6. Check weather the `MASS` package is installed, then **get the help of it**
+
+```{r mass-pkg, exercise = TRUE}
+
+```
+
+7. List all the data sets from `datasets` package.
+ 
+```{r exploring-datasets, exercise = TRUE}
+
+```
+
+8. Load **three datasets** of your choice from the `datasets` package, and use 
+`str()` function to check them
+
+```{r loading-datasets, exercise = TRUE}
+
+```
+
+9. List the datasets from the `MASS` package, and from `carData` if installed 
+
+```{r mass-and-carDara1, exercise = TRUE}
+
+```
+10. Load **three datasets** from each package (MASS and carData), and check the 
+first few observations using the function `head()`
+
+```{r mass-and-carDara2, exercise = TRUE}
+
+```
+
+## The Help is Your Friend
+  **Please read the help of some very common functions I chose for you** 
+  
+1. Get the **help** of the function `help`
+
+```{r help-help, exercise = TRUE}
+
+```
+
+2. Get the **help** of the function `ls()`
+
+```{r help-ls, exercise = TRUE}
+
+```
+
+3. Get the **help** of the function `str()` 
+
+```{r help-str, exercise = TRUE}
+
+```
+
+4. Get the **help** of the function `head()`
+
+```{r help-head, exercise = TRUE}
+
+```
+
+5. Get the **help** of the function `vector()`, 
+
+```{r help-vector, exercise = TRUE}
+
+```
+
+6. Get the **help** of the function `list()`
+
+```{r help-list, exercise= TRUE}
+
+```
+
+7. Get the **help** of the function `data.frame`
+
+```{r help-data-frame, exercise = TRUE}
+
+```
+
+8. Get the **help** of the function `factor`
+
+```{r help-factor, exercise = TRUE}
+
+```
+
+9. Get the **help** of the function `seq`
+
+```{r help-seq, exercise = TRUE}
+
+```
+10. Get the **help** of the function `matrix`
+
+```{r help-matrix, exercise = TRUE}
+
+```
+
+11. Get the **help** of the function `rep`
+
+```{r help-rep, exercise = TRUE}
+
+```
+
+12. Use the `example` function of `rep`, `list` and `seq`
+
+```{r examples, exercise = TRUE}
+
+```
+
+
+## Quiz
+
+
+  "The Next questions are TRUE, FALSE":
+
+```{r quiz}
+quiz(
+  
+  question("We can clean up by using rm(list=ls())?",
+    answer("true",correct=TRUE),
+    answer("false"),
+        allow_retry = TRUE,
+        correct = "Great!"
+  ),
+    question("help.start(),Is it taking you to the start page?",
+    answer("true",correct=TRUE),
+    answer("false"),
+        allow_retry = TRUE,
+        correct = "Great Job again!"
+  ),
+   question("We can list all the R objects by applying the str() function?",
+    answer("true"),
+    answer("false",correct=TRUE,),
+        allow_retry = TRUE,
+        correct = "Wonderful! Keep going"
+  ),
+     question("If you use the same dataset more often, you can use the attach() method?",
+    answer("true",correct=TRUE),
+    answer("false",),
+        allow_retry = TRUE,
+        correct = "See! you a hero!!!"
+  ),
+  question("If you need help, you put $ before the subject you want to know ?",
+    answer("true"),
+    answer("false",correct=TRUE),
+        allow_retry = TRUE,
+        correct = "Excellent!"
+  ), 
+  question("To get the path of the current working dictionary, you use ",
+    answer("getwd()",correct=TRUE),
+    answer("setwd()"),
+        allow_retry = TRUE,
+    correct="Great"
+  ),  
+    question("x=seq(1,10,length.out=5) , x=  ",
+    answer("1 2 3 4 5 "),
+    answer("1 3.25 5.50 7.75 10 ",correct=TRUE,),
+    answer("1 2.5 5 7.5 10"),
+        allow_retry = TRUE,
+
+    correct = "I am proud of you"
+    ),  
+    question("An excel file extension is xlsx or xls?",
+    answer("true",correct=TRUE),
+    answer("false"),
+    allow_retry = TRUE,
+        correct = "You are about to make it!"
+
+
+  ),
+    question("R functionality is divided into a number of ?  ",
+    answer("Packages",correct=TRUE),
+    answer("Functions"),
+    answer("Libraries"),
+        allow_retry = TRUE,
+
+    correct = "Great"
+    ),
+   question("What would be the output of the following code options=(digits=3) when excute print(1/3)?   ",
+    answer("0.333",correct=TRUE),
+    answer("0.333333"),
+    answer("0.3"),
+        allow_retry = TRUE,
+    correct = "Great"
+    ),
+     question("     Output of the following code  z <- 0:3 z = ?   ",
+    answer("0 3"),
+    answer("0 1 2 3",correct=TRUE ),
+    answer("0 1 2"),
+        allow_retry = TRUE,
+    correct = "That is great!, careful R is different than python if you made
+    it from that language, The stop is not inclusive in python"
+    )
+  
+)
+```
+
